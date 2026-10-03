@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+@layer components {
+  .main-bg {
+    @apply  bg-white/6.5 border-white;
+    
+  }
+
+
+
+
+
+.scroll-reveal {
+  opacity: 0;
+  transition:
+    opacity var(--duration) ease-out,
+    transform var(--duration) ease-out;
+  transition-delay: var(--delay);
+}
+
+.scroll-reveal[data-direction="up"] {
+  transform: translateY(16px);
+}
+
+.scroll-reveal[data-direction="down"] {
+  transform: translateY(-16px);
+}
+
+.scroll-reveal[data-direction="left"] {
+  transform: translateX(16px);
+}
+
+.scroll-reveal[data-direction="right"] {
+  transform: translateX(-16px);
+}
+
+.scroll-reveal[data-direction="none"] {
+  transform: none;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@keyframes auroraFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(20px, -15px, 0);
+  }
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+@keyframes avatarFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@utility animate-avatarFloat {
+  animation: avatarFloat 4s ease-in-out infinite;
+  will-change: transform;
+}
+
+
