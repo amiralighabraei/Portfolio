@@ -1,4 +1,6 @@
+
 import React from "react";
+import { GoArrowUpRight } from "react-icons/go";
 import ScrollReveal from "../Common/ScrollReveal";
 
 export const Footer = () => {
@@ -7,32 +9,46 @@ export const Footer = () => {
       <ScrollReveal direction="up" delay={100} duration={350}>
         <div
           className="
-            flex
-            flex-col
-            gap-5
-            border-t
-            border-white/[0.065]
-            px-4
-            py-8
-            sm:px-6
-            lg:px-0
+            flex flex-col gap-6
+            border-t border-white/[0.08]
+            py-7 sm:flex-row sm:items-center
+            sm:justify-between sm:py-8
           "
         >
-          <div className="flex flex-col gap-3">
-            <h4 className="text-2xl font-bold text-white">
-              امیرعلی غبرائی
-            </h4>
+          <a
+            href="#"
+            className="
+              w-fit text-base font-semibold text-gray-300
+              transition-colors duration-200
+              hover:text-cyan-300
+            "
+          >
+            امیرعلی غبرائی
+          </a>
 
-            <p className="text-sm text-gray-500">
-              ساخته شده با React و Tailwind
-            </p>
-          </div>
+          <a
+            href="#contact"
+            className="
+              group flex w-fit items-center gap-2
+              text-sm text-gray-500
+              transition-colors duration-200
+              hover:text-cyan-300
+            "
+          >
+            <span>گفتگو درباره یک پروژه</span>
 
-          <div className="flex items-center justify-between">
-            <p className="text-xs text-gray-600">
-              © {new Date().getFullYear()} تمامی حقوق محفوظ است.
-            </p>
-          </div>
+            <GoArrowUpRight
+              className="
+                text-base transition-transform duration-200
+                group-hover:-translate-y-0.5
+                group-hover:translate-x-0.5
+              "
+            />
+          </a>
+
+          <p className="text-xs leading-6 text-gray-600">
+            © {new Date().getFullYear()} تمامی حقوق محفوظ است.
+          </p>
         </div>
       </ScrollReveal>
     </footer>

@@ -45,7 +45,7 @@ export const Skills = () => {
       >
         <div className="grid w-full grid-cols-1 gap-3 md:grid-cols-3">
           {skillsdata.map((item, index) => (
-            <Card key={index} title={item} />
+             <Card key={item.title} title={item.title} description={item.description} />
           ))}
         </div>
       </ScrollReveal>

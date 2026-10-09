@@ -1,6 +1,6 @@
 import React from "react";
 import { StepsCard } from "../Common/StepsCard";
-import { workSteps } from "../data";
+import { stepsData } from "../data";
 import ScrollReveal from "../Common/ScrollReveal";
 
 export const Process = () => {
@@ -34,7 +34,7 @@ export const Process = () => {
           lg:grid-cols-4
         "
       >
-        {workSteps.map((item, index) => (
+        {stepsData.map((item, index) => (
           <ScrollReveal
             key={item.id}
             direction="up"

@@ -25,10 +25,6 @@ export const headerMenuData = [
 ]
 
  export const icons = [
-    { 
-        logo : <FaLinkedinIn/> ,
-        href : "https://www.linkedin.com/in/amirali-ghabraei-33ab38440/?isSelfProfile=false"
-    } ,
     {
         logo : <FaGithub/> ,
         href : "https://github.com/amiralighabraei"
@@ -41,69 +37,72 @@ export const headerMenuData = [
 
 
 export const currentFocus = [
-    "اپلیکیشن های ریکتی" ,
-    "رابط کاربری ریسپانسیو" ,
-    "کامپوننت  محور" ,
-    "UI مدرن"
+    "توسعه اپلیکیشن با React" ,
+    "طراحی رابط کاربری ریسپانسیو" ,
+    "معماری کامپوننت‌ محور" ,
+    "اتصال به Rest API و مدیریت داده ها" ,
+    "توجه به جزئیات بصری و تجربه کاربری(UX)"
 ] 
 
 export const skillsdata = [
-    "React",
-  "JavaScript",
-  "Tailwind CSS",
-  "Bootstrap",
-  "REST API",
-  "Git",
-  "GitHub",
-
-]
+  {
+    title: "React",
+    description: "توسعه رابط‌های کاربری کامپوننت‌محور",
+  },
+  {
+    title: "JavaScript",
+    description: "پیاده‌سازی منطق و تعاملات صفحات",
+  },
+  {
+    title: "Tailwind CSS",
+    description: "طراحی سریع و واکنش‌گرای رابط کاربری",
+  },
+  {
+    title: "REST API",
+    description: "دریافت و مدیریت داده‌های داینامیک",
+  },
+  {
+    title: "Git & GitHub",
+    description: "مدیریت نسخه و نگهداری پروژه‌ها",
+  },
+];
 
 export const projectData = [
     {
         id : 1 ,
-        title : "a" ,
-        img : "1" ,
-        description : "lorem1" ,
-        href : "#" ,
-        tools : "React"
+        title : "Cinemax | وب‌سایت نمایش و جست‌وجوی فیلم" ,
+        img : "./images/Cinemax.png" ,
+        description : "وب‌سایتی برای کشف و بررسی فیلم‌ها با استفاده از API پایگاه داده‌ی TMDB. برای بارگذاری اطلاعات و تصاویر فیلم‌ها، ممکن است به VPN نیاز داشته باشید." ,
+        href : "https://cinemax-weld-chi.vercel.app/" ,
+        tools : "ReactJS-Tailwind css-Rest API"
     } ,
-     {
-        id : 2 ,
-        title : "b" ,
-        img : "1" ,
-        description : "lorem1" ,
-        href : "#" ,
-        tools : "React"
-    } ,
-     {
-        id : 3 ,
-        title : "c" ,
-        img : "1" ,
-        description : "lorem1" ,
-        href : "#" ,
-        tools : "React"
-    }
+     
 ]
 
-export const workSteps = [
+
+export const stepsData = [
   {
     id: 1,
-    title: "کشف",
-    description: "درک هدف پروژه و تعریف ساختار",
+    title: "کشف و تحلیل",
+    description:
+      "شناخت اهداف پروژه، بررسی نیازها و تعیین ساختار و مسیر اجرای محصول.",
   },
   {
     id: 2,
     title: "طراحی",
-    description: "طراحی یک سیستم بصری پیش از نوشتن کد UI",
+    description:
+      "تعریف هویت بصری، انتخاب الگوهای طراحی و شکل‌دهی تجربه کاربری پیش از توسعه.",
   },
   {
     id: 3,
     title: "توسعه",
-    description: "تبدیل طرح به یک وب‌سایت تعاملی",
+    description:
+      "پیاده‌سازی رابط کاربری با React و ساخت تجربه‌ای تعاملی، واکنش‌گرا و منسجم.",
   },
   {
     id: 4,
-    title: "اصلاح",
-    description: "بررسی، تغییر و اصلاح پروژه بر اساس بازخورد",
+    title: "بازبینی و بهبود",
+    description:
+      "بررسی عملکرد و جزئیات رابط، رفع ایرادها و اعمال اصلاحات برای ارتقای کیفیت محصول.",
   },
 ];
