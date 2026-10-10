@@ -74,7 +74,8 @@ export const projectData = [
         img : "./images/Cinemax.png" ,
         description : "وب‌سایتی برای کشف و بررسی فیلم‌ها با استفاده از API پایگاه داده‌ی TMDB. برای بارگذاری اطلاعات و تصاویر فیلم‌ها، ممکن است به VPN نیاز داشته باشید." ,
         href : "https://cinemax-weld-chi.vercel.app/" ,
-        tools : "ReactJS-Tailwind css-Rest API"
+        tools : "ReactJS-Tailwind css-Rest API" ,
+        github : "https://github.com/amiralighabraei/Cinemax"
     } ,
      
 ]

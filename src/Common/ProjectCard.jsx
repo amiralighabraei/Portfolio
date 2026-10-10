@@ -1,7 +1,7 @@
-
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { FiExternalLink } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa";
 import ScrollReveal from "../Common/ScrollReveal";
 
 export const ProjectCard = ({
@@ -9,6 +9,7 @@ export const ProjectCard = ({
   description,
   img,
   href,
+  github,
   tools,
 }) => {
   const technologies = Array.isArray(tools)
@@ -33,7 +34,7 @@ export const ProjectCard = ({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`View ${title} project`}
+          aria-label={`View ${title} live demo`}
           className="
             relative block aspect-[16/10] overflow-hidden
             rounded-xl bg-gray-100 dark:bg-white/5
@@ -87,24 +88,51 @@ export const ProjectCard = ({
               {title}
             </h3>
 
-            <a
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`Open ${title} project`}
-              className="
-                flex h-9 w-9 shrink-0 items-center justify-center
-                rounded-full border border-gray-200 text-gray-600
-                transition-all duration-200
-                hover:border-cyan-500 hover:bg-cyan-500
-                hover:text-white
-                dark:border-white/10 dark:text-gray-300
-                dark:hover:border-cyan-400 dark:hover:bg-cyan-400
-                dark:hover:text-gray-950
-              "
-            >
-              <GoArrowUpRight size={20} />
-            </a>
+            <div className="flex shrink-0 items-center gap-2">
+              {github && (
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${title} source code on GitHub`}
+                  title="مشاهده کد در GitHub"
+                  className="
+                    flex h-9 w-9 items-center justify-center
+                    rounded-full border border-gray-200
+                    text-gray-600 transition-all duration-200
+                    hover:border-cyan-500 hover:bg-cyan-500
+                    hover:text-white
+                    dark:border-white/10 dark:text-gray-300
+                    dark:hover:border-cyan-400
+                    dark:hover:bg-cyan-400 dark:hover:text-gray-950
+                  "
+                >
+                  <FaGithub size={19} />
+                </a>
+              )}
+
+              {href && (
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${title} live demo`}
+                  title="مشاهده نسخه آنلاین"
+                  className="
+                    flex h-9 w-9 items-center justify-center
+                    rounded-full border border-gray-200
+                    text-gray-600 transition-all duration-200
+                    hover:border-cyan-500 hover:bg-cyan-500
+                    hover:text-white
+                    dark:border-white/10 dark:text-gray-300
+                    dark:hover:border-cyan-400
+                    dark:hover:bg-cyan-400 dark:hover:text-gray-950
+                  "
+                >
+                  <GoArrowUpRight size={20} />
+                </a>
+              )}
+            </div>
           </div>
 
           <p
