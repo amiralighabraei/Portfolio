@@ -77,7 +77,7 @@ npm run preview
 
 ## Live Demo
 
-[View Live Portfolio](https://amiralighabraei.github.io/portfolio/)
+[View Live Portfolio](https://amiralighabraei.vercel.app/)
 
 ## Contact
 
