@@ -1,19 +1,89 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive personal portfolio built with React and Tailwind CSS to showcase my projects, technical skills, and approach to front-end development.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio represents my journey as a Front-End Developer, with a focus on building clean, responsive, and user-friendly web interfaces. It features a minimal design, subtle animations, and a dark visual aesthetic enhanced by glassmorphism and ambient lighting effects.
 
-## React Compiler
+## Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Responsive Design** — Optimized for desktop, tablet, and mobile devices.
+- **Modern UI** — Minimal dark aesthetic with glassmorphism and subtle visual effects.
+- **Smooth Animations** — Lightweight transitions and scroll-based reveal effects.
+- **Projects Showcase** — A dedicated section highlighting selected projects.
+- **Skills Section** — An overview of my technical skills and tools.
+- **About Section** — An introduction to my background and development approach.
+- **Contact Section** — Direct links to connect with me.
+- **Performance-Conscious Design** — Carefully implemented visual effects to maintain a smooth user experience.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Tech Stack
 
-## Expanding the Oxlint configuration
+- **React** — Component-based UI development
+- **Tailwind CSS** — Utility-first styling and responsive layouts
+- **React Router** — Client-side navigation
+- **JavaScript** — Application logic and interactivity
+- **Vite** — Development server and production build tooling
+- **Git & GitHub** — Version control and project hosting
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/amiralighabraei/portfolio.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd portfolio
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL provided by Vite in your browser.
+
+### Production Build
+
+To create an optimized production build, run:
+
+```bash
+npm run build
+```
+
+To preview the production build locally, run:
+
+```bash
+npm run preview
+```
+
+## Live Demo
+
+[View Live Portfolio](https://amiralighabraei.github.io/portfolio/)
+
+## Contact
+
+- **GitHub:** [@amiralighabraei](https://github.com/amiralighabraei)
+- **Email:** [Get in Touch](https://mail.google.com/mail/?view=cm&fs=1&to=amiralighabraei@gmail.com)
+
+---
+
+Built with React and Tailwind CSS by **Amirali Ghabraei**.
